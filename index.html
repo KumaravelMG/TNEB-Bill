@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TNEB Calculator</title>
+    <link rel="stylesheet" href="EB.css">
+    <script src="EB.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>TNEB Bill Caculator</h1>
+
+    </header>
+
+    <section>
+        <!-- <form method="post"> -->
+            <div id="out">
+
+            <input type="text" id="screen" placeholder="Enter Number of units">
+
+            <div id="numb">
+                <button id="one"  onclick="one()" class="numbers">1</button>
+                <button  onclick="two()" class="numbers">2</button>
+                <button onclick="three()" class="numbers">3</button>
+                <button onclick="four()" class="numbers">4</button>
+                <button onclick="five()" class="numbers">5</button>
+                <button onclick="six()" class="numbers">6</button>
+                <button onclick="seven()" class="numbers">7</button>
+                <button onclick="eight()" class="numbers">8</button>
+                <button onclick="nine()" class="numbers">9</button>
+                <button onclick="dot()" class="numbers">.</button>
+                <button onclick="zero()" class="numbers">0</button>
+                <button id="c" class="numbers" onclick="c(),cout()">c</button>
+                
+                
+            </div>
+                
+        <!-- </form> -->
+        
+        <button id="cal" onclick="amt(),out()">Calculate</button>
+
+        
+
+    </section>
+
+    <section id="output">
+        
+        <div id="bill">
+            
+
+            <table>
+                <tr>
+                    <th>Units</th>
+                    <th>Amount</th>
+                </tr>
+                <tr>
+                    <td id="units" ><span ></span></td>
+                    <td id="evalue"></td>
+                    
+                </tr>
+               
+                <tr>
+                    <td id="3units" ><span id="3entered"></span></td>
+                    <td id="3evalue"></td>
+                    
+                </tr>
+                <tr>
+                    <td>Total</td>
+                    <td id="result"></td>
+                </tr>
+            </table>
+            <!-- <h2 id="result"> </h2>  -->
+        </div>
+    </section>
+    
+
+
+
+
+  
+
+
+
+</body>
+
+</html>
